@@ -12,7 +12,13 @@
 @implementation BIDQuartzFunView
 
 @synthesize firstTouch, lastTouch, currentColor, drawImage, useRandomColor, shapeType;
-
+@synthesize redrawRect, currentRect;
+- (CGRect)currentRect {
+    return CGRectMake (firstTouch.x,
+                       firstTouch.y,
+                       lastTouch.x - firstTouch.x,
+                       lastTouch.y - firstTouch.y);
+}
 - (id)initWithCoder:(NSCoder*)coder {
     if (self = [super initWithCoder:coder]) {
         currentColor = [UIColor redColor];
@@ -27,7 +33,6 @@
     CGContextSetLineWidth(context, 2.0);
     CGContextSetStrokeColorWithColor(context, currentColor.CGColor);
     CGContextSetFillColorWithColor(context, currentColor.CGColor);
-    CGRect currentRect = CGRectMake(firstTouch.x,firstTouch.y,lastTouch.x - firstTouch.x,lastTouch.x - firstTouch.y);
     switch (shapeType) {
         case kLineShape:
             CGContextMoveToPoint(context, firstTouch.x, firstTouch.y);
@@ -35,11 +40,11 @@
             CGContextStrokePath(context);
             break;
         case kRectShape:
-            CGContextAddRect(context, currentRect);
+            CGContextAddRect(context, self.currentRect);
             CGContextDrawPath(context, kCGPathFillStroke);
             break;
         case kEllipseShape:
-            CGContextAddEllipseInRect(context, currentRect);
+            CGContextAddEllipseInRect(context, self.currentRect);
             CGContextDrawPath(context, kCGPathFillStroke);
             break;
         case kImageShape:{
@@ -68,12 +73,33 @@
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     UITouch *touch = [touches anyObject];
     lastTouch = [touch locationInView:self];
-    [self setNeedsDisplay];
+    if (shapeType == kImageShape) {
+        CGFloat horizontalOffset = drawImage.size.width / 2;
+        CGFloat verticalOffset = drawImage.size.height / 2;
+        redrawRect = CGRectUnion(redrawRect,
+                                 CGRectMake(lastTouch.x - horizontalOffset,
+                                            lastTouch.y - verticalOffset,
+                                            drawImage.size.width,
+                                            drawImage.size.height));
+    }
+    else
+        redrawRect = CGRectUnion(redrawRect, self.currentRect);
+    redrawRect = CGRectInset(redrawRect, -2.0, -2.0);
+    [self setNeedsDisplayInRect:redrawRect];
 }
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
     UITouch *touch = [touches anyObject];
     lastTouch = [touch locationInView:self];
-    [self setNeedsDisplay];
+    if (shapeType == kImageShape) {
+        CGFloat horizontalOffset = drawImage.size.width / 2;
+        CGFloat verticalOffset = drawImage.size.height / 2;
+        redrawRect = CGRectUnion(redrawRect,
+                                 CGRectMake(lastTouch.x - horizontalOffset,
+                                            lastTouch.y - verticalOffset,
+                                            drawImage.size.width,
+                                            drawImage.size.height));
+    }
+    redrawRect = CGRectUnion(redrawRect, self.currentRect);
+    [self setNeedsDisplayInRect:redrawRect];
 }
-
 @end
