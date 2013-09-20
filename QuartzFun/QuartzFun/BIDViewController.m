@@ -7,8 +7,11 @@
 //
 
 #import "BIDViewController.h"
+#import "BIDConstants.h"
+#import "BIDQuartzFunView.h"
 
 @implementation BIDViewController
+@synthesize colorControl;
 
 - (void)didReceiveMemoryWarning
 {
@@ -26,6 +29,7 @@
 
 - (void)viewDidUnload
 {
+    [self setColorControl:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -57,4 +61,42 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (IBAction)changeColor:(id)sender {
+    UISegmentedControl *control = sender;
+    NSInteger index = [control selectedSegmentIndex];
+    BIDQuartzFunView *quartzView = (BIDQuartzFunView *)self.view;
+    switch (index) {
+        case kRedColorTab:
+            quartzView.currentColor = [UIColor redColor];
+            quartzView.useRandomColor = NO;
+            break;
+        case kBlueColorTab:
+            quartzView.currentColor = [UIColor blueColor];
+            quartzView.useRandomColor = NO;
+            break;
+        case kYellowColorTab:
+            quartzView.currentColor = [UIColor yellowColor];
+            quartzView.useRandomColor = NO;
+            break;
+        case kGreenColorTab:
+            quartzView.currentColor = [UIColor greenColor];
+            quartzView.useRandomColor = NO;
+            break;
+        case kRandomColorTab:
+            quartzView.useRandomColor = YES;
+            break;
+        default:
+            break;
+    }
+}
+
+- (IBAction)changeShape:(id)sender {
+    UISegmentedControl *control = sender;
+    [(BIDQuartzFunView *)self.view setShapeType:[control
+                                                 selectedSegmentIndex]];
+    if ([control selectedSegmentIndex] == kImageShape)
+        colorControl.hidden = YES;
+    else
+        colorControl.hidden = NO;
+}
 @end

@@ -17,8 +17,5 @@
 @property (nonatomic) ShapeType shapeType;
 @property (nonatomic, strong) UIImage *drawImage;
 @property (nonatomic) BOOL useRandomColor;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *colorControl;
-- (IBAction)changeColor:(id)sender;
-- (IBAction)changeShape:(id)sender;
 
 @end
