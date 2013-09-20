@@ -15,6 +15,8 @@
 		009BF7A317EC31DA00AB8E82 /* BIDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 009BF7A217EC31DA00AB8E82 /* BIDAppDelegate.m */; };
 		009BF7A617EC31DA00AB8E82 /* BIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009BF7A517EC31DA00AB8E82 /* BIDViewController.m */; };
 		009BF7A917EC31DB00AB8E82 /* BIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009BF7A717EC31DB00AB8E82 /* BIDViewController.xib */; };
+		009BF7B117EC322900AB8E82 /* BIDQuartzFunView.m in Sources */ = {isa = PBXBuildFile; fileRef = 009BF7B017EC322900AB8E82 /* BIDQuartzFunView.m */; };
+		009BF7B517EC32B800AB8E82 /* UIColor+BIDRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 009BF7B417EC32B800AB8E82 /* UIColor+BIDRandom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,11 @@
 		009BF7A417EC31DA00AB8E82 /* BIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDViewController.h; sourceTree = "<group>"; };
 		009BF7A517EC31DA00AB8E82 /* BIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDViewController.m; sourceTree = "<group>"; };
 		009BF7A817EC31DB00AB8E82 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BIDViewController.xib; sourceTree = "<group>"; };
+		009BF7AF17EC322900AB8E82 /* BIDQuartzFunView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDQuartzFunView.h; sourceTree = "<group>"; };
+		009BF7B017EC322900AB8E82 /* BIDQuartzFunView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDQuartzFunView.m; sourceTree = "<group>"; };
+		009BF7B217EC325F00AB8E82 /* BIDConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDConstants.h; sourceTree = "<group>"; };
+		009BF7B317EC32B800AB8E82 /* UIColor+BIDRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BIDRandom.h"; sourceTree = "<group>"; };
+		009BF7B417EC32B800AB8E82 /* UIColor+BIDRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BIDRandom.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +90,11 @@
 				009BF7A517EC31DA00AB8E82 /* BIDViewController.m */,
 				009BF7A717EC31DB00AB8E82 /* BIDViewController.xib */,
 				009BF79917EC31DA00AB8E82 /* Supporting Files */,
+				009BF7AF17EC322900AB8E82 /* BIDQuartzFunView.h */,
+				009BF7B017EC322900AB8E82 /* BIDQuartzFunView.m */,
+				009BF7B217EC325F00AB8E82 /* BIDConstants.h */,
+				009BF7B317EC32B800AB8E82 /* UIColor+BIDRandom.h */,
+				009BF7B417EC32B800AB8E82 /* UIColor+BIDRandom.m */,
 			);
 			path = QuartzFun;
 			sourceTree = "<group>";
@@ -163,6 +175,8 @@
 				009BF79F17EC31DA00AB8E82 /* main.m in Sources */,
 				009BF7A317EC31DA00AB8E82 /* BIDAppDelegate.m in Sources */,
 				009BF7A617EC31DA00AB8E82 /* BIDViewController.m in Sources */,
+				009BF7B117EC322900AB8E82 /* BIDQuartzFunView.m in Sources */,
+				009BF7B517EC32B800AB8E82 /* UIColor+BIDRandom.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
