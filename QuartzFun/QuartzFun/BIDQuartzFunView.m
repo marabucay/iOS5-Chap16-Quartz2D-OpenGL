@@ -26,6 +26,8 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetLineWidth(context, 2.0);
     CGContextSetStrokeColorWithColor(context, currentColor.CGColor);
+    CGContextSetFillColorWithColor(context, currentColor.CGColor);
+    CGRect currentRect = CGRectMake(firstTouch.x,firstTouch.y,lastTouch.x - firstTouch.x,lastTouch.x - firstTouch.y);
     switch (shapeType) {
         case kLineShape:
             CGContextMoveToPoint(context, firstTouch.x, firstTouch.y);
@@ -33,8 +35,12 @@
             CGContextStrokePath(context);
             break;
         case kRectShape:
+            CGContextAddRect(context, currentRect);
+            CGContextDrawPath(context, kCGPathFillStroke);
             break;
         case kEllipseShape:
+            CGContextAddEllipseInRect(context, currentRect);
+            CGContextDrawPath(context, kCGPathFillStroke);
             break;
         case kImageShape:
             break;
