@@ -7,14 +7,16 @@
 //
 
 #import "BIDQuartzFunView.h"
+#import "UIColor+BIDRandom.h"
 
 @implementation BIDQuartzFunView
+@synthesize firstTouch, lastTouch, currentColor, drawImage, useRandomColor, shapeType;
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
+- (id)initWithCoder:(NSCoder*)coder {
+    if (self = [super initWithCoder:coder]) {
+        currentColor = [UIColor redColor];
+        useRandomColor = NO;
+        self.drawImage = [UIImage imageNamed:@"iphone.png"] ;
     }
     return self;
 }
@@ -27,5 +29,26 @@
     // Drawing code
 }
 */
+
+#pragma mark - Touch Handling
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    if (useRandomColor) {
+        self.currentColor = [UIColor randomColor];
+    }
+    UITouch *touch = [touches anyObject];
+    firstTouch = [touch locationInView:self];
+    lastTouch = [touch locationInView:self];
+    [self setNeedsDisplay];
+}
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [touches anyObject];
+    lastTouch = [touch locationInView:self];
+    [self setNeedsDisplay];
+}
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [touches anyObject];
+    lastTouch = [touch locationInView:self];
+    [self setNeedsDisplay];
+}
 
 @end
