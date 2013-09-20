@@ -10,6 +10,7 @@
 #import "UIColor+BIDRandom.h"
 
 @implementation BIDQuartzFunView
+@synthesize colorControl;
 @synthesize firstTouch, lastTouch, currentColor, drawImage, useRandomColor, shapeType;
 
 - (id)initWithCoder:(NSCoder*)coder {
@@ -51,4 +52,9 @@
     [self setNeedsDisplay];
 }
 
+- (IBAction)changeColor:(id)sender {
+}
+
+- (IBAction)changeShape:(id)sender {
+}
 @end
