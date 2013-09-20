@@ -17,6 +17,7 @@
 		009BF7A917EC31DB00AB8E82 /* BIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009BF7A717EC31DB00AB8E82 /* BIDViewController.xib */; };
 		009BF7B117EC322900AB8E82 /* BIDQuartzFunView.m in Sources */ = {isa = PBXBuildFile; fileRef = 009BF7B017EC322900AB8E82 /* BIDQuartzFunView.m */; };
 		009BF7B517EC32B800AB8E82 /* UIColor+BIDRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 009BF7B417EC32B800AB8E82 /* UIColor+BIDRandom.m */; };
+		009BF7B717EC471600AB8E82 /* iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 009BF7B617EC471600AB8E82 /* iphone.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		009BF7B217EC325F00AB8E82 /* BIDConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDConstants.h; sourceTree = "<group>"; };
 		009BF7B317EC32B800AB8E82 /* UIColor+BIDRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BIDRandom.h"; sourceTree = "<group>"; };
 		009BF7B417EC32B800AB8E82 /* UIColor+BIDRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BIDRandom.m"; sourceTree = "<group>"; };
+		009BF7B617EC471600AB8E82 /* iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		009BF79917EC31DA00AB8E82 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				009BF7B617EC471600AB8E82 /* iphone.png */,
 				009BF79A17EC31DA00AB8E82 /* QuartzFun-Info.plist */,
 				009BF79B17EC31DA00AB8E82 /* InfoPlist.strings */,
 				009BF79E17EC31DA00AB8E82 /* main.m */,
@@ -162,6 +165,7 @@
 			files = (
 				009BF79D17EC31DA00AB8E82 /* InfoPlist.strings in Resources */,
 				009BF7A917EC31DB00AB8E82 /* BIDViewController.xib in Resources */,
+				009BF7B717EC471600AB8E82 /* iphone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

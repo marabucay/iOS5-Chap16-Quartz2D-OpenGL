@@ -42,8 +42,14 @@
             CGContextAddEllipseInRect(context, currentRect);
             CGContextDrawPath(context, kCGPathFillStroke);
             break;
-        case kImageShape:
+        case kImageShape:{
+            CGFloat horizontalOffset = drawImage.size.width / 2;
+            CGFloat verticalOffset = drawImage.size.height / 2;
+            CGPoint drawPoint = CGPointMake(lastTouch.x - horizontalOffset,
+                                            lastTouch.y - verticalOffset);
+            [drawImage drawAtPoint:drawPoint];
             break;
+        }
         default:
             break;
     }
