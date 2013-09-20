@@ -22,14 +22,26 @@
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
+- (void)drawRect:(CGRect)rect {
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetLineWidth(context, 2.0);
+    CGContextSetStrokeColorWithColor(context, currentColor.CGColor);
+    switch (shapeType) {
+        case kLineShape:
+            CGContextMoveToPoint(context, firstTouch.x, firstTouch.y);
+            CGContextAddLineToPoint(context, lastTouch.x, lastTouch.y);
+            CGContextStrokePath(context);
+            break;
+        case kRectShape:
+            break;
+        case kEllipseShape:
+            break;
+        case kImageShape:
+            break;
+        default:
+            break;
+    }
 }
-*/
 
 #pragma mark - Touch Handling
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
