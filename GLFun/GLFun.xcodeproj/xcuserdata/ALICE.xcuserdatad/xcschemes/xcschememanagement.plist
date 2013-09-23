@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>QuartzFun.xcscheme</key>
+		<key>GLFun.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>009BF78D17EC31DA00AB8E82</key>
+		<key>002A8FA117EFE40E00F022DA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

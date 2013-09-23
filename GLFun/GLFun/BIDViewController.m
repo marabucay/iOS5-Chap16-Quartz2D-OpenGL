@@ -7,8 +7,11 @@
 //
 
 #import "BIDViewController.h"
+#import "BIDConstants.h"
+#import "BIDGLFunView.h"
 
 @implementation BIDViewController
+@synthesize colorControl;
 
 - (void)didReceiveMemoryWarning
 {
@@ -26,6 +29,7 @@
 
 - (void)viewDidUnload
 {
+    [self setColorControl:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -57,4 +61,42 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (IBAction)changeColor:(id)sender {
+    UISegmentedControl *control = sender;
+    NSInteger index = [control selectedSegmentIndex];
+    BIDGLFunView *glView = (BIDGLFunView *)self.view;
+    switch (index) {
+        case kRedColorTab:
+            glView.currentColor = [UIColor redColor];
+            glView.useRandomColor = NO;
+            break;
+        case kBlueColorTab:
+            glView.currentColor = [UIColor blueColor];
+            glView.useRandomColor = NO;
+            break;
+        case kYellowColorTab:
+            glView.currentColor = [UIColor yellowColor];
+            glView.useRandomColor = NO;
+            break;
+        case kGreenColorTab:
+            glView.currentColor = [UIColor greenColor];
+            glView.useRandomColor = NO;
+            break;
+        case kRandomColorTab:
+            glView.useRandomColor = YES;
+            break;
+        default:
+            break;
+    }
+}
+
+- (IBAction)changeShape:(id)sender {
+    UISegmentedControl *control = sender;
+    [(BIDGLFunView *)self.view setShapeType:[control
+                                                 selectedSegmentIndex]];
+    if ([control selectedSegmentIndex] == kImageShape)
+        colorControl.hidden = YES;
+    else
+        colorControl.hidden = NO;
+}
 @end

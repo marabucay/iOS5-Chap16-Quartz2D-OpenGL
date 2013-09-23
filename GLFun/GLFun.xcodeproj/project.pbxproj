@@ -15,6 +15,13 @@
 		002A8FB717EFE40E00F022DA /* BIDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 002A8FB617EFE40E00F022DA /* BIDAppDelegate.m */; };
 		002A8FBA17EFE40E00F022DA /* BIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002A8FB917EFE40E00F022DA /* BIDViewController.m */; };
 		002A8FBD17EFE40E00F022DA /* BIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002A8FBB17EFE40E00F022DA /* BIDViewController.xib */; };
+		002A8FC817EFE65000F022DA /* Texture2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 002A8FC717EFE65000F022DA /* Texture2D.m */; };
+		002A8FCC17EFE67B00F022DA /* OpenGLES2DView.m in Sources */ = {isa = PBXBuildFile; fileRef = 002A8FCB17EFE67A00F022DA /* OpenGLES2DView.m */; };
+		002A8FD017EFE74100F022DA /* BIDGLFunView.m in Sources */ = {isa = PBXBuildFile; fileRef = 002A8FCF17EFE74000F022DA /* BIDGLFunView.m */; };
+		002A8FD317EFE9AD00F022DA /* UIColor+BIDRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 002A8FD217EFE9AD00F022DA /* UIColor+BIDRandom.m */; };
+		002A8FE717F00F8400F022DA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002A8FE617F00F8400F022DA /* OpenGLES.framework */; };
+		002A8FEA17F00FD100F022DA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002A8FE917F00FD100F022DA /* QuartzCore.framework */; };
+		002A8FED17F0148D00F022DA /* iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 002A8FEC17F0148D00F022DA /* iphone.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +38,19 @@
 		002A8FB817EFE40E00F022DA /* BIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDViewController.h; sourceTree = "<group>"; };
 		002A8FB917EFE40E00F022DA /* BIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDViewController.m; sourceTree = "<group>"; };
 		002A8FBC17EFE40E00F022DA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BIDViewController.xib; sourceTree = "<group>"; };
+		002A8FC717EFE65000F022DA /* Texture2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Texture2D.m; sourceTree = "<group>"; };
+		002A8FC917EFE65B00F022DA /* Texture2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Texture2D.h; sourceTree = "<group>"; };
+		002A8FCA17EFE67000F022DA /* OpenGLES2DView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLES2DView.h; sourceTree = "<group>"; };
+		002A8FCB17EFE67A00F022DA /* OpenGLES2DView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLES2DView.m; sourceTree = "<group>"; };
+		002A8FCD17EFE6EA00F022DA /* BIDConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDConstants.h; sourceTree = "<group>"; };
+		002A8FCE17EFE74000F022DA /* BIDGLFunView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDGLFunView.h; sourceTree = "<group>"; };
+		002A8FCF17EFE74000F022DA /* BIDGLFunView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDGLFunView.m; sourceTree = "<group>"; };
+		002A8FD117EFE9AD00F022DA /* UIColor+BIDRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BIDRandom.h"; sourceTree = "<group>"; };
+		002A8FD217EFE9AD00F022DA /* UIColor+BIDRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BIDRandom.m"; sourceTree = "<group>"; };
+		002A8FE617F00F8400F022DA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		002A8FE917F00FD100F022DA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		002A8FEB17F0117300F022DA /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		002A8FEC17F0148D00F022DA /* iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iphone.png; path = ../../../../Downloads/iphone.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002A8FEA17F00FD100F022DA /* QuartzCore.framework in Frameworks */,
+				002A8FE717F00F8400F022DA /* OpenGLES.framework in Frameworks */,
 				002A8FA717EFE40E00F022DA /* UIKit.framework in Frameworks */,
 				002A8FA917EFE40E00F022DA /* Foundation.framework in Frameworks */,
 				002A8FAB17EFE40E00F022DA /* CoreGraphics.framework in Frameworks */,
@@ -67,6 +89,8 @@
 		002A8FA517EFE40E00F022DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				002A8FE917F00FD100F022DA /* QuartzCore.framework */,
+				002A8FE617F00F8400F022DA /* OpenGLES.framework */,
 				002A8FA617EFE40E00F022DA /* UIKit.framework */,
 				002A8FA817EFE40E00F022DA /* Foundation.framework */,
 				002A8FAA17EFE40E00F022DA /* CoreGraphics.framework */,
@@ -82,7 +106,17 @@
 				002A8FB817EFE40E00F022DA /* BIDViewController.h */,
 				002A8FB917EFE40E00F022DA /* BIDViewController.m */,
 				002A8FBB17EFE40E00F022DA /* BIDViewController.xib */,
+				002A8FC717EFE65000F022DA /* Texture2D.m */,
+				002A8FC917EFE65B00F022DA /* Texture2D.h */,
+				002A8FCA17EFE67000F022DA /* OpenGLES2DView.h */,
+				002A8FCB17EFE67A00F022DA /* OpenGLES2DView.m */,
+				002A8FCD17EFE6EA00F022DA /* BIDConstants.h */,
 				002A8FAD17EFE40E00F022DA /* Supporting Files */,
+				002A8FCE17EFE74000F022DA /* BIDGLFunView.h */,
+				002A8FCF17EFE74000F022DA /* BIDGLFunView.m */,
+				002A8FD117EFE9AD00F022DA /* UIColor+BIDRandom.h */,
+				002A8FD217EFE9AD00F022DA /* UIColor+BIDRandom.m */,
+				002A8FEB17F0117300F022DA /* Constants.h */,
 			);
 			path = GLFun;
 			sourceTree = "<group>";
@@ -90,6 +124,7 @@
 		002A8FAD17EFE40E00F022DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				002A8FEC17F0148D00F022DA /* iphone.png */,
 				002A8FAE17EFE40E00F022DA /* GLFun-Info.plist */,
 				002A8FAF17EFE40E00F022DA /* InfoPlist.strings */,
 				002A8FB217EFE40E00F022DA /* main.m */,
@@ -150,6 +185,7 @@
 			files = (
 				002A8FB117EFE40E00F022DA /* InfoPlist.strings in Resources */,
 				002A8FBD17EFE40E00F022DA /* BIDViewController.xib in Resources */,
+				002A8FED17F0148D00F022DA /* iphone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +199,10 @@
 				002A8FB317EFE40E00F022DA /* main.m in Sources */,
 				002A8FB717EFE40E00F022DA /* BIDAppDelegate.m in Sources */,
 				002A8FBA17EFE40E00F022DA /* BIDViewController.m in Sources */,
+				002A8FC817EFE65000F022DA /* Texture2D.m in Sources */,
+				002A8FCC17EFE67B00F022DA /* OpenGLES2DView.m in Sources */,
+				002A8FD017EFE74100F022DA /* BIDGLFunView.m in Sources */,
+				002A8FD317EFE9AD00F022DA /* UIColor+BIDRandom.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +314,7 @@
 				002A8FC217EFE40E00F022DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
