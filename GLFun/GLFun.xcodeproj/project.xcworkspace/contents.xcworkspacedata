@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:QuartzFun.xcodeproj">
+      location = "self:GLFun.xcodeproj">
    </FileRef>
 </Workspace>

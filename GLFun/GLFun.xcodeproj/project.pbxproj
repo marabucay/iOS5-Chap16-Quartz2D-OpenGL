@@ -7,108 +7,93 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		009BF79317EC31DA00AB8E82 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009BF79217EC31DA00AB8E82 /* UIKit.framework */; };
-		009BF79517EC31DA00AB8E82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009BF79417EC31DA00AB8E82 /* Foundation.framework */; };
-		009BF79717EC31DA00AB8E82 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009BF79617EC31DA00AB8E82 /* CoreGraphics.framework */; };
-		009BF79D17EC31DA00AB8E82 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 009BF79B17EC31DA00AB8E82 /* InfoPlist.strings */; };
-		009BF79F17EC31DA00AB8E82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 009BF79E17EC31DA00AB8E82 /* main.m */; };
-		009BF7A317EC31DA00AB8E82 /* BIDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 009BF7A217EC31DA00AB8E82 /* BIDAppDelegate.m */; };
-		009BF7A617EC31DA00AB8E82 /* BIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009BF7A517EC31DA00AB8E82 /* BIDViewController.m */; };
-		009BF7A917EC31DB00AB8E82 /* BIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009BF7A717EC31DB00AB8E82 /* BIDViewController.xib */; };
-		009BF7B117EC322900AB8E82 /* BIDQuartzFunView.m in Sources */ = {isa = PBXBuildFile; fileRef = 009BF7B017EC322900AB8E82 /* BIDQuartzFunView.m */; };
-		009BF7B517EC32B800AB8E82 /* UIColor+BIDRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 009BF7B417EC32B800AB8E82 /* UIColor+BIDRandom.m */; };
-		009BF7B717EC471600AB8E82 /* iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 009BF7B617EC471600AB8E82 /* iphone.png */; };
+		002A8FA717EFE40E00F022DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002A8FA617EFE40E00F022DA /* UIKit.framework */; };
+		002A8FA917EFE40E00F022DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002A8FA817EFE40E00F022DA /* Foundation.framework */; };
+		002A8FAB17EFE40E00F022DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002A8FAA17EFE40E00F022DA /* CoreGraphics.framework */; };
+		002A8FB117EFE40E00F022DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 002A8FAF17EFE40E00F022DA /* InfoPlist.strings */; };
+		002A8FB317EFE40E00F022DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 002A8FB217EFE40E00F022DA /* main.m */; };
+		002A8FB717EFE40E00F022DA /* BIDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 002A8FB617EFE40E00F022DA /* BIDAppDelegate.m */; };
+		002A8FBA17EFE40E00F022DA /* BIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002A8FB917EFE40E00F022DA /* BIDViewController.m */; };
+		002A8FBD17EFE40E00F022DA /* BIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002A8FBB17EFE40E00F022DA /* BIDViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		009BF78E17EC31DA00AB8E82 /* QuartzFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuartzFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		009BF79217EC31DA00AB8E82 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		009BF79417EC31DA00AB8E82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		009BF79617EC31DA00AB8E82 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		009BF79A17EC31DA00AB8E82 /* QuartzFun-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuartzFun-Info.plist"; sourceTree = "<group>"; };
-		009BF79C17EC31DA00AB8E82 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		009BF79E17EC31DA00AB8E82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		009BF7A017EC31DA00AB8E82 /* QuartzFun-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuartzFun-Prefix.pch"; sourceTree = "<group>"; };
-		009BF7A117EC31DA00AB8E82 /* BIDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDAppDelegate.h; sourceTree = "<group>"; };
-		009BF7A217EC31DA00AB8E82 /* BIDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDAppDelegate.m; sourceTree = "<group>"; };
-		009BF7A417EC31DA00AB8E82 /* BIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDViewController.h; sourceTree = "<group>"; };
-		009BF7A517EC31DA00AB8E82 /* BIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDViewController.m; sourceTree = "<group>"; };
-		009BF7A817EC31DB00AB8E82 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BIDViewController.xib; sourceTree = "<group>"; };
-		009BF7AF17EC322900AB8E82 /* BIDQuartzFunView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDQuartzFunView.h; sourceTree = "<group>"; };
-		009BF7B017EC322900AB8E82 /* BIDQuartzFunView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDQuartzFunView.m; sourceTree = "<group>"; };
-		009BF7B217EC325F00AB8E82 /* BIDConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDConstants.h; sourceTree = "<group>"; };
-		009BF7B317EC32B800AB8E82 /* UIColor+BIDRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BIDRandom.h"; sourceTree = "<group>"; };
-		009BF7B417EC32B800AB8E82 /* UIColor+BIDRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BIDRandom.m"; sourceTree = "<group>"; };
-		009BF7B617EC471600AB8E82 /* iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone.png; sourceTree = "<group>"; };
+		002A8FA217EFE40E00F022DA /* GLFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		002A8FA617EFE40E00F022DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		002A8FA817EFE40E00F022DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		002A8FAA17EFE40E00F022DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		002A8FAE17EFE40E00F022DA /* GLFun-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLFun-Info.plist"; sourceTree = "<group>"; };
+		002A8FB017EFE40E00F022DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		002A8FB217EFE40E00F022DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		002A8FB417EFE40E00F022DA /* GLFun-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLFun-Prefix.pch"; sourceTree = "<group>"; };
+		002A8FB517EFE40E00F022DA /* BIDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDAppDelegate.h; sourceTree = "<group>"; };
+		002A8FB617EFE40E00F022DA /* BIDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDAppDelegate.m; sourceTree = "<group>"; };
+		002A8FB817EFE40E00F022DA /* BIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDViewController.h; sourceTree = "<group>"; };
+		002A8FB917EFE40E00F022DA /* BIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDViewController.m; sourceTree = "<group>"; };
+		002A8FBC17EFE40E00F022DA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BIDViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		009BF78B17EC31DA00AB8E82 /* Frameworks */ = {
+		002A8F9F17EFE40E00F022DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				009BF79317EC31DA00AB8E82 /* UIKit.framework in Frameworks */,
-				009BF79517EC31DA00AB8E82 /* Foundation.framework in Frameworks */,
-				009BF79717EC31DA00AB8E82 /* CoreGraphics.framework in Frameworks */,
+				002A8FA717EFE40E00F022DA /* UIKit.framework in Frameworks */,
+				002A8FA917EFE40E00F022DA /* Foundation.framework in Frameworks */,
+				002A8FAB17EFE40E00F022DA /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		009BF78317EC31DA00AB8E82 = {
+		002A8F9717EFE40E00F022DA = {
 			isa = PBXGroup;
 			children = (
-				009BF79817EC31DA00AB8E82 /* QuartzFun */,
-				009BF79117EC31DA00AB8E82 /* Frameworks */,
-				009BF78F17EC31DA00AB8E82 /* Products */,
+				002A8FAC17EFE40E00F022DA /* GLFun */,
+				002A8FA517EFE40E00F022DA /* Frameworks */,
+				002A8FA317EFE40E00F022DA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		009BF78F17EC31DA00AB8E82 /* Products */ = {
+		002A8FA317EFE40E00F022DA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				009BF78E17EC31DA00AB8E82 /* QuartzFun.app */,
+				002A8FA217EFE40E00F022DA /* GLFun.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		009BF79117EC31DA00AB8E82 /* Frameworks */ = {
+		002A8FA517EFE40E00F022DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				009BF79217EC31DA00AB8E82 /* UIKit.framework */,
-				009BF79417EC31DA00AB8E82 /* Foundation.framework */,
-				009BF79617EC31DA00AB8E82 /* CoreGraphics.framework */,
+				002A8FA617EFE40E00F022DA /* UIKit.framework */,
+				002A8FA817EFE40E00F022DA /* Foundation.framework */,
+				002A8FAA17EFE40E00F022DA /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		009BF79817EC31DA00AB8E82 /* QuartzFun */ = {
+		002A8FAC17EFE40E00F022DA /* GLFun */ = {
 			isa = PBXGroup;
 			children = (
-				009BF7A117EC31DA00AB8E82 /* BIDAppDelegate.h */,
-				009BF7A217EC31DA00AB8E82 /* BIDAppDelegate.m */,
-				009BF7A417EC31DA00AB8E82 /* BIDViewController.h */,
-				009BF7A517EC31DA00AB8E82 /* BIDViewController.m */,
-				009BF7A717EC31DB00AB8E82 /* BIDViewController.xib */,
-				009BF79917EC31DA00AB8E82 /* Supporting Files */,
-				009BF7AF17EC322900AB8E82 /* BIDQuartzFunView.h */,
-				009BF7B017EC322900AB8E82 /* BIDQuartzFunView.m */,
-				009BF7B217EC325F00AB8E82 /* BIDConstants.h */,
-				009BF7B317EC32B800AB8E82 /* UIColor+BIDRandom.h */,
-				009BF7B417EC32B800AB8E82 /* UIColor+BIDRandom.m */,
+				002A8FB517EFE40E00F022DA /* BIDAppDelegate.h */,
+				002A8FB617EFE40E00F022DA /* BIDAppDelegate.m */,
+				002A8FB817EFE40E00F022DA /* BIDViewController.h */,
+				002A8FB917EFE40E00F022DA /* BIDViewController.m */,
+				002A8FBB17EFE40E00F022DA /* BIDViewController.xib */,
+				002A8FAD17EFE40E00F022DA /* Supporting Files */,
 			);
-			path = QuartzFun;
+			path = GLFun;
 			sourceTree = "<group>";
 		};
-		009BF79917EC31DA00AB8E82 /* Supporting Files */ = {
+		002A8FAD17EFE40E00F022DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				009BF7B617EC471600AB8E82 /* iphone.png */,
-				009BF79A17EC31DA00AB8E82 /* QuartzFun-Info.plist */,
-				009BF79B17EC31DA00AB8E82 /* InfoPlist.strings */,
-				009BF79E17EC31DA00AB8E82 /* main.m */,
-				009BF7A017EC31DA00AB8E82 /* QuartzFun-Prefix.pch */,
+				002A8FAE17EFE40E00F022DA /* GLFun-Info.plist */,
+				002A8FAF17EFE40E00F022DA /* InfoPlist.strings */,
+				002A8FB217EFE40E00F022DA /* main.m */,
+				002A8FB417EFE40E00F022DA /* GLFun-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -116,89 +101,86 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		009BF78D17EC31DA00AB8E82 /* QuartzFun */ = {
+		002A8FA117EFE40E00F022DA /* GLFun */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 009BF7AC17EC31DB00AB8E82 /* Build configuration list for PBXNativeTarget "QuartzFun" */;
+			buildConfigurationList = 002A8FC017EFE40E00F022DA /* Build configuration list for PBXNativeTarget "GLFun" */;
 			buildPhases = (
-				009BF78A17EC31DA00AB8E82 /* Sources */,
-				009BF78B17EC31DA00AB8E82 /* Frameworks */,
-				009BF78C17EC31DA00AB8E82 /* Resources */,
+				002A8F9E17EFE40E00F022DA /* Sources */,
+				002A8F9F17EFE40E00F022DA /* Frameworks */,
+				002A8FA017EFE40E00F022DA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = QuartzFun;
-			productName = QuartzFun;
-			productReference = 009BF78E17EC31DA00AB8E82 /* QuartzFun.app */;
+			name = GLFun;
+			productName = GLFun;
+			productReference = 002A8FA217EFE40E00F022DA /* GLFun.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		009BF78517EC31DA00AB8E82 /* Project object */ = {
+		002A8F9917EFE40E00F022DA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
 			};
-			buildConfigurationList = 009BF78817EC31DA00AB8E82 /* Build configuration list for PBXProject "QuartzFun" */;
+			buildConfigurationList = 002A8F9C17EFE40E00F022DA /* Build configuration list for PBXProject "GLFun" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 009BF78317EC31DA00AB8E82;
-			productRefGroup = 009BF78F17EC31DA00AB8E82 /* Products */;
+			mainGroup = 002A8F9717EFE40E00F022DA;
+			productRefGroup = 002A8FA317EFE40E00F022DA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				009BF78D17EC31DA00AB8E82 /* QuartzFun */,
+				002A8FA117EFE40E00F022DA /* GLFun */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		009BF78C17EC31DA00AB8E82 /* Resources */ = {
+		002A8FA017EFE40E00F022DA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				009BF79D17EC31DA00AB8E82 /* InfoPlist.strings in Resources */,
-				009BF7A917EC31DB00AB8E82 /* BIDViewController.xib in Resources */,
-				009BF7B717EC471600AB8E82 /* iphone.png in Resources */,
+				002A8FB117EFE40E00F022DA /* InfoPlist.strings in Resources */,
+				002A8FBD17EFE40E00F022DA /* BIDViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		009BF78A17EC31DA00AB8E82 /* Sources */ = {
+		002A8F9E17EFE40E00F022DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				009BF79F17EC31DA00AB8E82 /* main.m in Sources */,
-				009BF7A317EC31DA00AB8E82 /* BIDAppDelegate.m in Sources */,
-				009BF7A617EC31DA00AB8E82 /* BIDViewController.m in Sources */,
-				009BF7B117EC322900AB8E82 /* BIDQuartzFunView.m in Sources */,
-				009BF7B517EC32B800AB8E82 /* UIColor+BIDRandom.m in Sources */,
+				002A8FB317EFE40E00F022DA /* main.m in Sources */,
+				002A8FB717EFE40E00F022DA /* BIDAppDelegate.m in Sources */,
+				002A8FBA17EFE40E00F022DA /* BIDViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		009BF79B17EC31DA00AB8E82 /* InfoPlist.strings */ = {
+		002A8FAF17EFE40E00F022DA /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				009BF79C17EC31DA00AB8E82 /* en */,
+				002A8FB017EFE40E00F022DA /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		009BF7A717EC31DB00AB8E82 /* BIDViewController.xib */ = {
+		002A8FBB17EFE40E00F022DA /* BIDViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				009BF7A817EC31DB00AB8E82 /* en */,
+				002A8FBC17EFE40E00F022DA /* en */,
 			);
 			name = BIDViewController.xib;
 			sourceTree = "<group>";
@@ -206,7 +188,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		009BF7AA17EC31DB00AB8E82 /* Debug */ = {
+		002A8FBE17EFE40E00F022DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -231,7 +213,7 @@
 			};
 			name = Debug;
 		};
-		009BF7AB17EC31DB00AB8E82 /* Release */ = {
+		002A8FBF17EFE40E00F022DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -251,23 +233,23 @@
 			};
 			name = Release;
 		};
-		009BF7AD17EC31DB00AB8E82 /* Debug */ = {
+		002A8FC117EFE40E00F022DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "QuartzFun/QuartzFun-Prefix.pch";
-				INFOPLIST_FILE = "QuartzFun/QuartzFun-Info.plist";
+				GCC_PREFIX_HEADER = "GLFun/GLFun-Prefix.pch";
+				INFOPLIST_FILE = "GLFun/GLFun-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		009BF7AE17EC31DB00AB8E82 /* Release */ = {
+		002A8FC217EFE40E00F022DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "QuartzFun/QuartzFun-Prefix.pch";
-				INFOPLIST_FILE = "QuartzFun/QuartzFun-Info.plist";
+				GCC_PREFIX_HEADER = "GLFun/GLFun-Prefix.pch";
+				INFOPLIST_FILE = "GLFun/GLFun-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -276,24 +258,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		009BF78817EC31DA00AB8E82 /* Build configuration list for PBXProject "QuartzFun" */ = {
+		002A8F9C17EFE40E00F022DA /* Build configuration list for PBXProject "GLFun" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				009BF7AA17EC31DB00AB8E82 /* Debug */,
-				009BF7AB17EC31DB00AB8E82 /* Release */,
+				002A8FBE17EFE40E00F022DA /* Debug */,
+				002A8FBF17EFE40E00F022DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		009BF7AC17EC31DB00AB8E82 /* Build configuration list for PBXNativeTarget "QuartzFun" */ = {
+		002A8FC017EFE40E00F022DA /* Build configuration list for PBXNativeTarget "GLFun" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				009BF7AD17EC31DB00AB8E82 /* Debug */,
-				009BF7AE17EC31DB00AB8E82 /* Release */,
+				002A8FC117EFE40E00F022DA /* Debug */,
+				002A8FC217EFE40E00F022DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 009BF78517EC31DA00AB8E82 /* Project object */;
+	rootObject = 002A8F9917EFE40E00F022DA /* Project object */;
 }
